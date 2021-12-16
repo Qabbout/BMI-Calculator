@@ -52,6 +52,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ulL-3E-BLA"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="heightSliderChnaged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XQ1-tu-896"/>
+                                        </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Bj9-hh-xB8">
                                         <rect key="frame" x="0.0" y="660.5" width="374" height="20.5"/>
@@ -76,6 +79,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="agq-c2-c6s"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="iKc-td-80R"/>
+                                        </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKF-9q-5Pl">
                                         <rect key="frame" x="0.0" y="767" width="374" height="51"/>
@@ -89,7 +95,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="xdz-7v-wbu" kind="presentation" id="7g7-Ou-8sZ"/>
+                                            <action selector="calculateClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3X-Ux-8Fa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -111,6 +117,13 @@
                             <constraint firstItem="R3n-vb-mby" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hj1-ar-Wvl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightSlider" destination="HGl-gf-smM" id="ujA-tx-KSx"/>
+                        <outlet property="heightValueLabel" destination="Jho-9f-KJF" id="8xZ-WW-cnJ"/>
+                        <outlet property="weightSlider" destination="Syf-e9-mA0" id="DKm-ry-9eE"/>
+                        <outlet property="weightValueLabel" destination="wj3-ys-2vO" id="PAp-Cq-ct1"/>
+                        <segue destination="xdz-7v-wbu" kind="presentation" identifier="goToResult" id="c1a-GX-pT4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,6 +174,9 @@
                                 <state key="normal" title="RECALCULATE">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="recalculateClicked:" destination="xdz-7v-wbu" eventType="touchUpInside" id="r9G-7w-FUW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bko-fq-GQ5"/>
@@ -177,6 +193,10 @@
                             <constraint firstItem="UYW-TB-p7n" firstAttribute="centerX" secondItem="t0t-3H-qnX" secondAttribute="centerX" id="uVF-jG-Opb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="RXD-tz-55f" id="q0q-Yr-2wO"/>
+                        <outlet property="bmiLabel" destination="I1T-pp-bDA" id="Xlp-tn-CIu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjv-r3-lnr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,10 +207,10 @@
         <image name="calculate_background" width="375" height="812"/>
         <image name="result_background" width="375" height="812"/>
         <namedColor name="AccentColor">
-            <color red="0.38224792480000003" green="0.37476241589999998" blue="0.61723464729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.38199999928474426" green="0.375" blue="0.61699998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SecondaryColor">
-            <color red="0.63528376819999999" green="0.63167697190000005" blue="0.87036675210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63499999046325684" green="0.63200002908706665" blue="0.87000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
