@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		F7BE59F8276B5B350020E294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE59F7276B5B350020E294 /* AppDelegate.swift */; };
 		F7BE59FA276B5B350020E294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE59F9276B5B350020E294 /* SceneDelegate.swift */; };
-		F7BE59FC276B5B350020E294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE59FB276B5B350020E294 /* ViewController.swift */; };
+		F7BE59FC276B5B350020E294 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE59FB276B5B350020E294 /* CalculatorViewController.swift */; };
 		F7BE59FF276B5B350020E294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BE59FD276B5B350020E294 /* Main.storyboard */; };
 		F7BE5A01276B5B3A0020E294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BE5A00276B5B3A0020E294 /* Assets.xcassets */; };
 		F7BE5A04276B5B3A0020E294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BE5A02276B5B3A0020E294 /* LaunchScreen.storyboard */; };
+		F7CEED15276B69FA00A7C536 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CEED14276B69FA00A7C536 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7BE59F4276B5B350020E294 /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BE59F7276B5B350020E294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7BE59F9276B5B350020E294 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7BE59FB276B5B350020E294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7BE59FB276B5B350020E294 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		F7BE59FE276B5B350020E294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7BE5A00276B5B3A0020E294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7BE5A03276B5B3A0020E294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7BE5A05276B5B3A0020E294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7CEED14276B69FA00A7C536 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 		F7CEED12276B5BB000A7C536 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F7BE59FB276B5B350020E294 /* ViewController.swift */,
+				F7BE59FB276B5B350020E294 /* CalculatorViewController.swift */,
+				F7CEED14276B69FA00A7C536 /* ResultsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,9 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BE59FC276B5B350020E294 /* ViewController.swift in Sources */,
+				F7BE59FC276B5B350020E294 /* CalculatorViewController.swift in Sources */,
 				F7BE59F8276B5B350020E294 /* AppDelegate.swift in Sources */,
 				F7BE59FA276B5B350020E294 /* SceneDelegate.swift in Sources */,
+				F7CEED15276B69FA00A7C536 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
